@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+     
+</head>
+
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <div class="main">
+
+        <form id="addRowForm">
+      
+            <label for="name" class="large-label">Student Name</label>
+            <input id="name" type="name" placeholder="Enter Student Name" required/>
+       
+            <label for="fname" class="large-label">Father Name</label>
+            <input id="fname" type="name" placeholder="Enter Father Name" required/>
+       
+            <label for="email" class="large-label">Email</label>
+            <input id="email" type="email" placeholder="Enter Student's Email" required/>
+
+            <label for="date" class="large-label">Date</label>
+            <input id="date" type="date"  required/>
+
+        
+            <button id="submit" >Add</button>
+            <button id="updateStudent" class="hidden">Update</button>
+            <button id="clear" class="hidden">Clear</button>
+    </form>
+
+    <button id="fetchStudents" >View Students</button>
+   
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Student ID </th>
+                <th>Student Name </th>
+                <th>Father Name </th>
+                <th>Email </th>
+                <th>Date Of Admission </th>
+                <th>ACTION</th>
+               
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+            
+            </tr>
+
+
+        </tbody>
+
+
+
+    </table>
+
+
+</div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
